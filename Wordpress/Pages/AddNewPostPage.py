@@ -4,11 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
-# from selenium import webdriver
-
 class AddNewPostPage(BasePage):
-    # def __init__(self):
-    #     self.driver = webdriver.Chrome()
 
     def add_new_post(self, title="Default title", message = "Default message"):
         # filling the post title
