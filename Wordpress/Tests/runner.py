@@ -16,8 +16,8 @@ suite  = unittest.TestSuite()
 # suite.addTests(loader.loadTestsFromModule(login_test))
 # suite.addTests(loader.loadTestsFromModule(basic_post_test))
 # suite.addTests(loader.loadTestsFromModule(page_test))
-suite.addTests(loader.loadTestsFromModule(added_post_show_up_test))
-# suite.addTests(loader.loadTestsFromModule(search_post_test))
+# suite.addTests(loader.loadTestsFromModule(added_post_show_up_test))
+suite.addTests(loader.loadTestsFromModule(search_post_test))
 
 # initialize a runner
 runner = HtmlTestRunner.HTMLTestRunner(combine_reports=True, report_name="Wordpress_test_results", verbosity=3, output="C:/Users/Vitalik/"

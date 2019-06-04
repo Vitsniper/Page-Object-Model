@@ -1,6 +1,3 @@
-from PageObjectModel.Wordpress.Pages.AddNewPostPage import AddNewPostPage
-from PageObjectModel.Wordpress.Pages.PostsPage import PostsPage
-from PageObjectModel.Wordpress.Navigation.navigation import Posts
 from PageObjectModel.Wordpress.Tests.baseTest import BaseTest
 from PageObjectModel.Wordpress.Tools.PostCreator import PostCreator
 

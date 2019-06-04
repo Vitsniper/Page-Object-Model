@@ -9,10 +9,8 @@ words = ["cat", "dog", "new", "post", "need", "speed", "creativity"]
 articles = ["a", "the", "for", "to", "in", "as", "of", "from"]
 
 class PostCreator(BasePage):
-
-    def initialize(self):
-        previous_title = None
-        previous_body = None
+    previous_title = None
+    previous_body = None
 
     def create_random_string(self):
         # generates string for title and body
@@ -53,9 +51,5 @@ class PostCreator(BasePage):
 
     def trash_post(self):
         if PostCreator.previous_title != None:
-            # posts_nav = Posts(self.driver)
-            # posts_nav.goto_posts()
             posts_page = PostsPage(self.driver)
             posts_page.delete_post(PostCreator.previous_title)
-        else:
-            pass
